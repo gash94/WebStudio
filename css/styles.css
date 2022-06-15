@@ -654,7 +654,6 @@ address {
     margin-top: 14px;
     margin-left: 78px;
     width: 570px;
-    
 }
 
 .newsletter-tittle {
@@ -665,7 +664,7 @@ address {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    
+
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand-second-color);
@@ -814,18 +813,13 @@ label {
     transition-property: border, fill;
 }
 
-
 .form label:focus-within {
     fill: var(--brand-main-color);
-    
 }
 
-.form input:focus-within  {
+.form input:focus-within {
     border: 1px solid var(--brand-main-color);
-    
 }
-
-
 
 textarea {
     padding: 12px 16px 12px 16px;
@@ -844,10 +838,8 @@ textarea {
     transition-property: border;
 }
 
-
-textarea:focus
- {
-    border: 1px solid var(--brand-main-color); 
+textarea:focus {
+    border: 1px solid var(--brand-main-color);
 }
 .consent {
     margin-top: 20px;
@@ -888,12 +880,7 @@ textarea:focus
     line-height: 24px;
     letter-spacing: 0.03em;
     border-color: #000;
-
 }
-.checkbox:checked {
-background: #000;
-}
-
 
 .submit {
     display: flex;
