@@ -651,7 +651,7 @@ address {
 /* newsletter */
 .newsletter-form {
     text-align: left;
-    margin-top: 18px;
+    margin-top: 14px;
     margin-left: 78px;
     width: 570px;
     
@@ -685,7 +685,7 @@ address {
     margin-right: 12px;
     background-color: #2f303a;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: var(--brand-second-color);
     border-radius: 4px;
 }
 .newsletter-btn {
@@ -768,6 +768,7 @@ address {
     text-align: left;
     margin-left: 40px;
     margin-right: 40px;
+    position: relative;
 }
 
 .form-head {
@@ -793,8 +794,10 @@ label {
     line-height: 14px;
     letter-spacing: 0.01em;
     color: #757575;
+    transition: var(--transition);
+    transition-property: border, fill;
 }
-input {
+.form-input {
     padding: 12px;
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -806,9 +809,23 @@ input {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-
     color: #757575;
+    transition: var(--transition);
+    transition-property: border, fill;
 }
+
+
+.form label:focus-within {
+    fill: var(--brand-main-color);
+    
+}
+
+.form input:focus-within  {
+    border: 1px solid var(--brand-main-color);
+    
+}
+
+
 
 textarea {
     padding: 12px 16px 12px 16px;
@@ -822,10 +839,16 @@ textarea {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-
     color: #757575;
+    transition: var(--transition);
+    transition-property: border;
 }
 
+
+textarea:focus
+ {
+    border: 1px solid var(--brand-main-color); 
+}
 .consent {
     margin-top: 20px;
     display: flex;
@@ -864,8 +887,13 @@ textarea {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #757575;
+    border-color: #000;
+
 }
+.checkbox:checked {
+background: #000;
+}
+
 
 .submit {
     display: flex;
@@ -891,4 +919,10 @@ textarea {
 
 .submit:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.icon-form {
+    position: absolute;
+    top: 38px;
+    left: 12px;
 }
