@@ -26,6 +26,8 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .section {
     padding-top: 94px;
@@ -568,7 +570,6 @@ footer {
 .contact {
     display: flex;
     align-items: flex-start;
-    color: rgba(255, 255, 255, 0.6);
 }
 .footer-contact {
     font-weight: 400;
@@ -645,14 +646,14 @@ address {
 }
 
 .social {
-    margin-top: 18px;
+    margin-top: 14px;
     margin-left: 70px;
 }
 /* newsletter */
 .newsletter-form {
     text-align: left;
     margin-top: 14px;
-    margin-left: 78px;
+    margin-left: auto;
     width: 570px;
 }
 
