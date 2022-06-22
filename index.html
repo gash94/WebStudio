@@ -13,53 +13,57 @@
             rel="stylesheet" />
         <title>WebStudio</title>
     </head>
-    <body>
-        <header class="head">
+    <body class="page">
+        <header class="page-header">
             <div class="container">
-                <h3 class="logo">
-                    <a href="./index.html" class="link"
-                        ><span class="logo-bluecolor">Web</span
-                        ><span class="logo-blackcolor">Studio</span></a
+                <h3 class="logo page-header__logo">
+                    <a href="./index.html" class="logo__link"
+                        ><span class="logo--first-color">Web</span
+                        ><span class="logo--second-color">Studio</span></a
                     >
                 </h3>
                 <nav>
-                    <ul class="nav-menu">
-                        <li class="nav-menu-item">
-                            <a href="./index.html" class="link activepage"
+                    <ul class="nav">
+                        <li class="nav__item nav__item--start">
+                            <a
+                                href="./index.html"
+                                class="nav__link nav__link--active-page"
                                 >Agencja</a
                             >
                         </li>
-                        <li class="nav-menu-item">
-                            <a href="./portfolio.html" class="link"
+                        <li class="nav__item nav__item--start">
+                            <a href="./portfolio.html" class="nav__link"
                                 >Portfolio</a
                             >
                         </li>
-                        <li class="nav-menu-item">
-                            <a href="#contact" class="link">Kontakt</a>
+                        <li class="nav__item nav__item--start">
+                            <a href="#contact" class="nav__link">Kontakt</a>
                         </li>
                     </ul>
                 </nav>
                 <ul class="head-contact">
-                    <li class="icon-contact">
-                        <a href="mailto:info@devstudio.com" class="link">
+                    <li class="head-contact__item">
+                        <a
+                            href="mailto:info@devstudio.com"
+                            class="head-contact__link">
                             <svg
-                                class="icon-contact"
+                                class="head-contact__icon head-contact__icon--mail"
                                 width="17"
-                                height="12"
-                                style="margin-right: 10px; margin-bottom: -1px">
+                                height="12">
                                 <use
                                     href="./images/icon.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com</a
                         >
                     </li>
-                    <li class="icon-contact">
-                        <a href="tel:+4811111111" class="link">
+                    <li class="head-contact__item">
+                        <a
+                            href="tel:+4811111111"
+                            class="head-contact__link head-contact__link--end">
                             <svg
-                                class="icon-contact"
+                                class="head-contact__icon head-contact__icon--tel"
                                 width="11"
-                                height="16"
-                                style="margin-right: 10px; margin-bottom: -3px">
+                                height="16">
                                 <use
                                     href="./images/icon.svg#icon-smartphone"></use>
                             </svg>
@@ -70,23 +74,24 @@
             </div>
         </header>
 
-        <main>
-            <section class="banner-main">
-                <div class="container">
-                    <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <main class="page-main">
+            <section class="banner">
+                <div class="container banner__container">
+                    <h1 class="banner__titile">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
                     <button
-                        class="banner-main-button"
+                        class="button banner__button"
                         type="button"
                         data-modal-open>
-                        <span class="banner-main-button-text"
+                        <span class="button__label"
                             >Zamów usługę</span
                         >
                     </button>
                 </div>
             </section>
 
-            <section class="container">
-                <ul class="section asset">
+            <section class="section">
+                <div class="container">
+                <ul class="asset">
                     <li class="asset-item-icon">
                         <svg class="icon" width="70" height="70">
                             <use href="./images/icon.svg#icon-antenna"></use>
@@ -133,6 +138,7 @@
                         malesuada
                     </li>
                 </ul>
+            </div>
             </section>
 
             <section class="section section-pref">
@@ -474,11 +480,11 @@
             </section>
         </main>
         <footer id="contact" class="section-footer">
-            <div class="container contact">
+            <div class="container  contact">
                 <div class="">
                     <h3 class="footer-logo">
-                        <span class="logo-bluecolor">Web</span
-                        ><span class="logo-whitecolor">Studio</span>
+                        <span class="logo--first-color">Web</span
+                        ><span class="logo--second-color">Studio</span>
                     </h3>
                     <address>m. Warszawa, Aleje Jerozolimskie 21</address>
                     <ul class="footer-contact">
