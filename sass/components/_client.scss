@@ -1,0 +1,31 @@
+.client {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.client__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    transition: var(--transition);
+    transition-property: border-color;
+
+    &:hover .client__icon {
+        fill: var(--brand-main-color);
+    }
+    &:hover {
+        border-color: var(--brand-main-color);
+    }
+}
+
+.client__icon {
+    fill: #afb1b8;
+    transition: var(--transition);
+    transition-property: fill;
+}
+

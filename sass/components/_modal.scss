@@ -1,0 +1,43 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--brand-second-color);
+    transition: var(--transition);
+    transition-property: transform;
+}
+
+.modal__head {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-main-color);
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--brand-second-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.modal__icon {
+    fill: var(--brand--third-color);
+    position: absolute;
+    top: 51%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}

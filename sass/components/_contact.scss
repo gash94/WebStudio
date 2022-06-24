@@ -1,0 +1,38 @@
+.contact__logo {
+    text-align: left; 
+ }
+ .contact__address {
+     padding-top: 20px;
+     color: var(--brand-second-color);
+     text-decoration: none;
+     font-style: normal;
+     list-style: none;
+     padding-bottom: 9px;
+ }
+ 
+ .footer-contact {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 0.03em;
+     list-style: none;
+     text-decoration: none;
+ }
+ 
+ .footer-contact__item {
+     font-family: "Roboto";
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 0.03em;
+ 
+     padding-bottom: 9px;
+     text-align: left;
+ }
+ .footer-contact__link {
+     color: rgba(255, 255, 255, 0.6);
+     text-decoration: none;
+     transition: var(--transition);
+     transition-property: color, background-color, box-shadow;
+ }

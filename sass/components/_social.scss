@@ -1,0 +1,40 @@
+.social {
+    margin-top: 14px;
+    margin-left: 70px;
+}
+.social__title {
+    text-align: left;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    color: var(--brand-second-color);
+}
+.footer-social {
+    text-align: left;
+    width: 206px;
+    height: 80px;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.footer-social__icon {
+    fill: var(--brand-second-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+    transition-property: background-color;
+
+    &:active,
+    &:hover,
+    &:focus {
+        background-color: var(--brand-main-color);
+    }
+}

@@ -1,0 +1,36 @@
+.banner__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    min-height: 600px;
+    display: flex;
+    background-image: linear-gradient(
+            0deg,
+            rgba(47, 48, 58, 0.4) 0%,
+            rgba(47, 48, 58, 0.4) 100%
+        ),
+        url("../images/banner.jpg");
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.banner__titile {
+    max-width: 696px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--brand-second-color);
+}
+
+.banner__button {
+    margin-top: 30px;
+}

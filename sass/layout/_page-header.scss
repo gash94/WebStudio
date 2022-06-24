@@ -1,0 +1,15 @@
+.page-header {
+    height: 80px;
+    display: flex;
+    background: var(--brand-second-color);
+    border-bottom: 1px solid #ececec;
+}
+
+.page-header .container {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__logo {
+    padding-right: 93px;
+}
