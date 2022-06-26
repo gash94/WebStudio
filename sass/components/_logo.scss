@@ -4,29 +4,32 @@
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-}
-.logo__link {
-    text-decoration: none;
-    color: var(--text-main-color);
-    transition: var(--transition);
-    transition-property: color, background-color, box-shadow;
 
-    &:visited {
+    &__link {
+        text-decoration: none;
         color: var(--text-main-color);
-    }
-    &:active,
-    &:hover,
-    &:focus {
-        color: var(--brand-main-color);
+        transition: var(--transition);
+        transition-property: color, background-color, box-shadow;
+    
+        &:visited {
+            color: var(--text-main-color);
+        }
+        &:active,
+        &:hover,
+        &:focus {
+            color: var(--brand-main-color);
+        }
+        &--first-color {
+            color: var(--brand-main-color);
+        }
+        &--third-color {
+            color: var(--text-main-color);
+        }
+        &--second-color {
+            color: var(--brand-second-color);
+        }
+        
     }
 }
 
-.logo--first-color {
-    color: var(--brand-main-color);
-}
-.logo--third-color {
-    color: var(--text-main-color);
-}
-.logo--second-color {
-    color: var(--brand-second-color);
-}
+

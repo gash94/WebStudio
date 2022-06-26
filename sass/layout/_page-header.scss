@@ -3,13 +3,17 @@
     display: flex;
     background: var(--brand-second-color);
     border-bottom: 1px solid #ececec;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        padding-right: 93px;
+    }
 }
 
-.page-header .container {
-    display: flex;
-    align-items: center;
-}
 
-.page-header__logo {
-    padding-right: 93px;
-}
+
+

@@ -1,9 +1,4 @@
-.banner__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .banner {
     min-height: 600px;
     display: flex;
@@ -16,21 +11,28 @@
     background-size: 1600px;
     background-repeat: no-repeat;
     background-position: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__titile {
+        max-width: 696px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--brand-second-color);
+    }
+    
+    &__button {
+        margin-top: 30px;
+    }
 }
 
 
-.banner__titile {
-    max-width: 696px;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--brand-second-color);
-}
-
-.banner__button {
-    margin-top: 30px;
-}
