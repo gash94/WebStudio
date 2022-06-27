@@ -2,10 +2,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
-}
 
-.footer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
 }
