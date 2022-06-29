@@ -1,1 +1,1 @@
-zadanie domowe #7 GoIT Polska
+zadanie domowe #8 GoIT Polska
