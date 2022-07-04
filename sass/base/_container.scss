@@ -1,6 +1,27 @@
 .container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    
+}
+
+@media screen and (min-width: 1200px) {
+    // desktop
+    .container {
+        width: 1200px;
+        border: 1px solid black;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    // tablet
+    .container {
+        width: 768px;
+        border: 1px solid black;
+    }
+}
+@media screen and (max-width: 767px) {
+    // mobilie
+    .container {
+        width: 450px;
+        border: 1px solid black;
+    }
 }

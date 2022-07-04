@@ -1,9 +1,9 @@
 .social {
-    margin-top: 14px;
-    margin-left: 70px;
+    margin-top: 60px;
+    margin-bottom: 46px;
 
     &__title {
-        text-align: left;
+        text-align: center;
         font-family: "Roboto";
         font-style: normal;
         font-weight: 700;
@@ -11,9 +11,6 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        padding: 0;
-        margin: 0;
-        margin-bottom: 20px;
         color: var(--brand-second-color);
     }
 }
@@ -21,7 +18,7 @@
 .footer-social {
     text-align: left;
     width: 206px;
-    height: 80px;
+    margin-top: 20px;
     list-style: none;
     display: inline-flex;
     justify-content: space-between;
@@ -32,7 +29,7 @@
         border-radius: 50%;
         transition: var(--transition);
         transition-property: background-color;
-    
+
         &:active,
         &:hover,
         &:focus {
@@ -41,4 +38,54 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    //desktop
+    .social {
+        margin-top: 14px;
+        margin-left: 70px;
 
+        &__title {
+            text-align: left;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 20px;
+            color: var(--brand-second-color);
+        }
+    }
+
+    .footer-social {
+        text-align: left;
+        width: 206px;
+        height: 80px;
+        list-style: none;
+        display: inline-flex;
+        justify-content: space-between;
+
+        &__icon {
+            fill: var(--brand-second-color);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+            transition-property: background-color;
+
+            &:active,
+            &:hover,
+            &:focus {
+                background-color: var(--brand-main-color);
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    // tablet
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    // mobile
+}
