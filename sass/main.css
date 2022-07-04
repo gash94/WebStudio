@@ -687,7 +687,7 @@
   object-fit: cover;
 }
 .portfolio__description {
-  z-index: 1001;
+  z-index: 500;
   position: absolute;
   background-color: #fff;
   bottom: 0;
@@ -1153,13 +1153,13 @@
 }
 
 .mobile-social {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   list-style: none;
 }
 .mobile-social__item {
-  padding-right: 8px;
+  padding-right: 6px;
 }
 .mobile-social__link {
   font-weight: 500;
@@ -1170,7 +1170,7 @@
 }
 .mobile-social__line {
   color: rgba(33, 33, 33, 0.2);
-  padding-left: 6px;
+  padding-left: 4px;
 }
 
 @media (min-width: 768px) {
