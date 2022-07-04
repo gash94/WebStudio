@@ -17,6 +17,7 @@
     }
     &__preferences {
         display: none;
+        overflow: hidden;
     }
 }
 
@@ -33,6 +34,8 @@
             margin-bottom: 50px;
         }
         &__preferences {
+            display: block;
+            overflow: visible;
             padding-top: 0;
         }
     }
