@@ -15,6 +15,9 @@
     &__team {
         background-color: #f5f4fa;
     }
+    &__preferences {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -37,12 +40,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     // tablet
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-    // mobilie
-    .section {
-        
-        &__preferences {
-            display: none;
-        }
-    }
+@media screen and (min-width: 450px) and (max-width: 767px) {
+    //mobile
 }
+

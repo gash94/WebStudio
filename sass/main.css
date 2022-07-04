@@ -24,7 +24,7 @@
 }
 
 .container {
-  width: 450px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -38,7 +38,7 @@
     width: 768px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 450px) and (max-width: 767px) {
   .container {
     width: 450px;
   }
@@ -60,6 +60,9 @@
 .section__team {
   background-color: #f5f4fa;
 }
+.section__preferences {
+  display: none;
+}
 
 @media screen and (min-width: 1200px) {
   .section {
@@ -75,11 +78,6 @@
   }
   .section__preferences {
     padding-top: 0;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .section__preferences {
-    display: none;
   }
 }
 .backdrop {
