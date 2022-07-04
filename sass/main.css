@@ -803,6 +803,7 @@
   margin-bottom: 46px;
 }
 .social__title {
+  margin-bottom: 20px;
   text-align: center;
   font-family: "Roboto";
   font-style: normal;
@@ -817,7 +818,6 @@
 .footer-social {
   text-align: left;
   width: 206px;
-  margin-top: 20px;
   list-style: none;
   display: inline-flex;
   justify-content: space-between;
@@ -840,23 +840,11 @@
   }
   .social__title {
     text-align: left;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 20px;
-    color: var(--brand-second-color);
   }
 
   .footer-social {
     text-align: left;
     width: 206px;
-    height: 80px;
     list-style: none;
     display: inline-flex;
     justify-content: space-between;
