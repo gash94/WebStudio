@@ -3,6 +3,7 @@
     display: flex;
     background: var(--brand-second-color);
     border-bottom: 1px solid #ececec;
+    z-index: 999;
 
     .container {
         display: flex;

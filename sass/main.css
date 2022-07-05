@@ -608,7 +608,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  width: 210px;
+  width: 200px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -674,14 +674,16 @@
 */
 .filter {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   list-style: none;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 .filter__button {
   width: 114px;
   height: 38px;
+  margin-top: 15px;
   margin-right: 4px;
   margin-left: 4px;
   font-weight: 500;
@@ -706,6 +708,24 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 50px;
+    flex-wrap: no-wrap;
+  }
+  .filter__button {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .filter {
+    padding-top: 45px;
+  }
+}
 .portfolio {
   display: flex;
   justify-content: center;
@@ -715,9 +735,9 @@
 }
 .portfolio__item {
   position: relative;
-  width: 370px;
+  width: 100%;
   height: 404px;
-  margin: 15px;
+  margin: 15px 0 15px 0;
   list-style-type: none;
   background: var(--brand-second-color);
   overflow: hidden;
@@ -727,18 +747,6 @@
 }
 .portfolio__item:hover .overlay {
   transform: translateY(0);
-}
-.portfolio__item:nth-child(3n+1) {
-  margin-left: 0;
-}
-.portfolio__item:nth-child(3n+3) {
-  margin-right: 0;
-}
-.portfolio__item:nth-child(n+7) {
-  margin-bottom: 0;
-}
-.portfolio__item:nth-child(-n+3) {
-  margin-top: 0;
 }
 .portfolio__item:active, .portfolio__item:hover, .portfolio__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -783,6 +791,106 @@
   color: #757575;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    width: 370px;
+    margin: 15px;
+  }
+  .portfolio:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  .portfolio:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  .portfolio:nth-child(n+7) {
+    margin-bottom: 0;
+  }
+  .portfolio:nth-child(-n+3) {
+    margin-top: 0;
+  }
+}
+/*.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+    &__item {
+        position: relative;
+        width: 370px;
+        height: 404px;
+        margin: 15px;
+        list-style-type: none;
+        background: var(--brand-second-color);
+        overflow: hidden;
+        cursor: pointer;
+        transition: var(--transition);
+        transition-property: box-shadow;
+
+        &:hover .overlay {
+            transform: translateY(0);
+        }
+
+        &:nth-child(3n + 1) {
+            margin-left: 0;
+        }
+        &:nth-child(3n + 3) {
+            margin-right: 0;
+        }
+        &:nth-child(n + 7) {
+            margin-bottom: 0;
+        }
+        &:nth-child(-n + 3) {
+            margin-top: 0;
+        }
+        &:active,
+        &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
+    &__image {
+        object-fit: cover;
+    }
+    &__description {
+        z-index: 500;
+        position: absolute;
+        background-color: #fff;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-top: -6px;
+        list-style: none;
+        border-left: 1px solid #eeeeee;
+        border-right: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
+    }
+    &__name {
+        padding-top: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 4px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        color: var(--text-main-color);
+    }
+    &__type {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 20px;
+        text-align: left;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
+}*/
 .overlay {
   position: absolute;
   top: 0;
@@ -1218,6 +1326,7 @@
   display: flex;
   background: var(--brand-second-color);
   border-bottom: 1px solid #ececec;
+  z-index: 999;
 }
 .page-header .container {
   display: flex;

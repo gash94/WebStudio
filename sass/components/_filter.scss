@@ -1,38 +1,66 @@
 .filter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
 
-  &__button {
-    width: 114px;
-    height: 38px;
-    margin-right: 4px;
-    margin-left: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-main-color);
-    background: #f5f4fa;
-    border-radius: 4px;
-    border: 0px;
-    transition: var(--transition);
-    transition-property: color, background, box-shadow;
+    &__button {
+        width: 114px;
+        height: 38px;
+        margin-top: 15px;
+        margin-right: 4px;
+        margin-left: 4px;
 
-    &:active,
-    &:hover,
-    &:focus {
-      color: var(--brand-second-color);
-      background: var(--brand-main-color);
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-      cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--text-main-color);
+        background: #f5f4fa;
+        border-radius: 4px;
+        border: 0px;
+        transition: var(--transition);
+        transition-property: color, background, box-shadow;
+
+        &:active,
+        &:hover,
+        &:focus {
+            color: var(--brand-second-color);
+            background: var(--brand-main-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+        }
     }
-  }
+}
+
+@media screen and (min-width: 1200px) {
+    //desktop
+    .filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin-bottom: 50px;
+        flex-wrap: no-wrap;
+        &__button {
+            
+            margin-top: 0;
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    // tablet
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    // mobilie
+    .filter {
+        padding-top: 45px;
+    }
 }
