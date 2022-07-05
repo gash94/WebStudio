@@ -27,6 +27,16 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     // tablet
+    .page-footer {
+
+        &__container {
+            
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
     // mobile
