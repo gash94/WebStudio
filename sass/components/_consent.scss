@@ -3,43 +3,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 14px;
     
+
     &__link {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
         text-decoration-line: underline;
         color: #2196f3;
     }
-    
+
     &__label {
-        margin-top: 0;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
         color: #757575;
     }
     &__input {
+        display: inline-block;
         width: 16px;
         height: 15px;
-        margin-right: 7px;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
+        
+
     }
-    
+
     &__button {
-        margin-left: 124px;
+        margin-left: 85px;
         margin-top: 30px;
     }
-    
+}
+@media screen and (min-width: 1200px) {
+    //desktop
+    .consent {
+        font-size: 14px;
+        line-height: 24px;}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    // tablet
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    // mobile
 }
