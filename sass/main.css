@@ -28,7 +28,6 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 15px;
 }
 
 /*@media screen and (min-width: 1200px) {
@@ -421,7 +420,7 @@
   text-align: left;
 }
 .asset__item {
-  max-width: 100%;
+  max-width: 450px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -467,11 +466,11 @@
     margin-right: 0;
   }
   .asset__icon {
+    max-width: 270px;
+    height: 120px;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
   }
   .asset__icon:nth-child(4n+1) {
     margin-left: 0;
@@ -545,7 +544,7 @@
   flex-wrap: wrap;
 }
 .team__item {
-  width: 450px;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
