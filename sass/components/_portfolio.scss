@@ -9,7 +9,7 @@
     &__item {
         position: relative;
         width: calc(100vw - 30px);
-
+        min-height: 404px;
         margin: 15px 0 15px 0;
         list-style-type: none;
         background: var(--brand-second-color);
@@ -97,7 +97,7 @@
         justify-content: flex-start;
         &__item {
             width: calc(50vw - 30px);
-            margin:  15px;
+            margin: 15px;
         }
     }
 }
