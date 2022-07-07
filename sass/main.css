@@ -28,6 +28,7 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 15px;
 }
 
 /*@media screen and (min-width: 1200px) {
@@ -542,6 +543,7 @@
   list-style: none;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: -15px;
 }
 .team__item {
   width: calc(100vw - 30px);
@@ -594,12 +596,12 @@
 
 @media screen and (min-width: 1200px) {
   .team {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
   }
   .team__item {
-    width: calc(25vw - 30px);
+    width: 270px;
     margin-left: 15px;
     margin-right: 15px;
   }
