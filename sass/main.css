@@ -808,11 +808,10 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio {
-    width: calc(50vw - 30px);
     justify-content: flex-start;
   }
   .portfolio__item {
-    width: 354px;
+    width: calc(50vw - 30px);
     margin: 15px;
   }
 }
