@@ -536,6 +536,7 @@
   flex-wrap: wrap;
 }
 .team__item {
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -592,7 +593,6 @@
   }
   .team__item {
     width: 270px;
-    height: 428px;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -609,7 +609,6 @@
   }
   .team__item {
     width: 354px;
-    height: 536px;
     margin-left: 15px;
     margin-right: 15px;
   }

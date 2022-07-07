@@ -5,6 +5,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     &__item {
+        width: 450px;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -66,8 +68,9 @@
         flex-direction: row;
         flex-wrap: none;
         &__item {
+
             width: 270px;
-            height: 428px;
+            
             margin-left: 15px;
             margin-right: 15px;
 
@@ -86,7 +89,7 @@
         flex-direction: row;
         &__item {
             width: 354px;
-            height: 536px;
+            
             margin-left: 15px;
             margin-right: 15px;
         }

@@ -88,8 +88,14 @@
             </ul>
             <ul class="portfolio">
                 <li class="portfolio__item">
-                    <img class="portfolio__image" src="images/portfolio1.jpg" alt="person on computer" width="370"
-                        height="294" />
+                    
+                        <img class="portfolio__image" alt="person on computer" src="./images/portfolio1.jpg" srcset="
+                        ./images/portfolio1.jpg 370w,
+                        ./images/portfolio1@2x.jpg 354w,
+                        ./images/portfolio1@3x.jpg 450w" sizes="
+                        (min-width: 1200px) 370px,
+                        (min-width: 768px) 354px,
+                        (min-width: 320px) 450px">
                     <div class="overlay">
                         <p class="overlay__label">
                             Technocrack jest popularną platformą wykorzystywaną
@@ -108,8 +114,20 @@
                 </li>
 
                 <li class="portfolio__item">
-                    <img class="portfolio__image" src="images/portfolio2.jpg" alt="person on computer" width="370"
-                        height="294" style="object-position: 15% 20%" />
+                    <!-- <img class="portfolio__image" alt="person on computer" src="./images/portfolio2.jpg" srcset="
+                        ./images/portfolio2.jpg 370w,
+                        ./images/portfolio2@2x.jpg 354w,
+                        ./images/portfolio2@3x.jpg 450w" sizes="
+                        (min-width: 1200px) 370px,
+                        (min-width: 768px) 354px,
+                        (min-width: 320px) 450px"> -->
+                        <img class="portfolio__image" alt="person on computer" src="./images/portfolio2.jpg" srcset="
+                        ./images/portfolio2.jpg 370w,
+                        ./images/portfolio2@2x.jpg 354w,
+                        ./images/portfolio2@3x.jpg 450w" sizes="
+                        (min-width: 1200px) calc(33.3333vw - 30px),
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) calc(100vw - 30px)">
                     <div class="overlay">
                         <p class="overlay__label">
                             Technocrack jest popularną platformą wykorzystywaną
