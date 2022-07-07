@@ -760,7 +760,7 @@ img {
 }
 .portfolio__description {
   z-index: 500;
-  position: absolute;
+  position: relative;
   background-color: #fff;
   bottom: 0;
   left: 0;
