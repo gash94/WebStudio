@@ -4,9 +4,10 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: left;
+    margin: 0 -15px;
 
     &__item {
-        max-width: 450px;
+        width: calc(100vw - 30px);
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
@@ -43,7 +44,7 @@
     // desktop
     .asset {
         &__item {
-            max-width: 270px;
+            width: 270px;
             max-height: 251px;
             margin-left: 15px;
             margin-right: 15px;
@@ -88,7 +89,7 @@
     .asset {
         .asset {
             &__item {
-                max-width: 354px;
+                width: calc(50vw - 30px);
                 max-height: 251px;
                 margin-left: 15px;
                 margin-right: 15px;

@@ -1,7 +1,7 @@
 .newsletter-form {
     text-align: center;
     margin-top: 14px;
-    width: 100%;
+    width: calc(100vw - 30px);
 
     &__tittle {
         margin: 0;
@@ -68,7 +68,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     // tablet
     .newsletter-form {
-        width: 450px;
+        width: calc(100vw - 30px);
         margin-top: 60px;
     }
 }
