@@ -68,6 +68,11 @@
             border: 1px solid var(--brand-main-color);
         }
     }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
 }
 
 .custom-input {

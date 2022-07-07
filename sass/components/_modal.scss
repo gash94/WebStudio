@@ -4,7 +4,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    width: calc(100vw - 30px);
+    max-width: 450px;
     min-height: 609px;
     border-radius: 4px;
     background-color: var(--brand-second-color);
@@ -13,7 +14,7 @@
 
     &__head {
         
-        width: 370px;
+        max-width: 370px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 40px;
@@ -50,17 +51,17 @@
 @media screen and (min-width: 1200px) {
     //desktop
     .modal {
-        width: 528px;
+        max-width: 528px;
         min-height: 581px;
         &__head {
-            width: 446px;
+            max-width: 446px;
             line-height: 30px;
         }
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     // tablet
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-    // mobile
+    .modal {
+        max-width: 450px;
+    }
 }

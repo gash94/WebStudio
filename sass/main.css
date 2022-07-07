@@ -96,7 +96,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: calc(100vw - 30px);
+  max-width: 450px;
   min-height: 609px;
   border-radius: 4px;
   background-color: var(--brand-second-color);
@@ -104,7 +105,7 @@
   transition-property: transform;
 }
 .modal__head {
-  width: 370px;
+  max-width: 370px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
@@ -139,12 +140,17 @@
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
   }
   .modal__head {
-    width: 446px;
+    max-width: 446px;
     line-height: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
   }
 }
 .button {
@@ -723,11 +729,11 @@
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
+  margin: 0 -15px;
 }
 .portfolio__item {
   position: relative;
-  width: 100%;
-  height: 404px;
+  width: calc(100vw - 30px);
   margin: 15px 0 15px 0;
   list-style-type: none;
   background: var(--brand-second-color);
@@ -802,6 +808,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio {
+    width: calc(50vw - 30px);
     justify-content: flex-start;
   }
   .portfolio__item {
@@ -1092,6 +1099,11 @@
 .data-form__textarea:focus {
   border: 1px solid var(--brand-main-color);
 }
+.data-form__button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 
 .custom-input {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2222 1.66667V13.3333H1.77778V1.66667H14.2222ZM14.2222 0H1.77778C0.8 0 0 0.75 0 1.66667V13.3333C0 14.25 0.8 15 1.77778 15H14.2222C15.2 15 16 14.25 16 13.3333V1.66667C16 0.75 15.2 0 14.2222 0Z' fill='%23212121'/%3E%3C/svg%3E");
@@ -1132,10 +1144,6 @@
   display: inline-block;
   width: 16px;
   height: 15px;
-}
-.consent__button {
-  margin-left: 85px;
-  margin-top: 30px;
 }
 
 @media screen and (min-width: 1200px) {
