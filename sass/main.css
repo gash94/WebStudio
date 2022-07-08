@@ -408,7 +408,7 @@
   margin: 0 -15px;
 }
 .asset__item {
-  width: calc(100vw - 30px);
+  width: calc(100% - 30px);
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -479,7 +479,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .asset .asset__item {
-    width: calc(50vw - 30px);
+    width: calc(50% - 30px);
     max-height: 251px;
     margin-left: 15px;
     margin-right: 15px;
@@ -530,6 +530,7 @@
   list-style: none;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 0 -15px;
 }
 .team__item {
   width: calc(100vw - 30px);
