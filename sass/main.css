@@ -530,7 +530,6 @@
   list-style: none;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 -15px;
 }
 .team__item {
   width: calc(100vw - 30px);
