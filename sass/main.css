@@ -888,7 +888,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contact {
-    width: 247px;
+    width: auto;
   }
   .contact__logo {
     text-align: left;
@@ -945,7 +945,6 @@ img {
   .social {
     width: 206px;
     margin-top: 14px;
-    margin-left: 70px;
   }
   .social__title {
     text-align: left;
@@ -1018,7 +1017,7 @@ img {
 @media screen and (min-width: 1200px) {
   .newsletter-form {
     text-align: left;
-    margin-left: auto;
+    margin-left: 0 auto;
     width: 570px;
   }
   .newsletter-form__tittle {
